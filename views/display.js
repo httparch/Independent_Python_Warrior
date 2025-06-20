@@ -207,7 +207,7 @@ var Display = (function () {
   //cacheImage(name, longName): Caches an image by creating a new Image object, setting its src, and storing it in imageCache once it loads.
   function cacheImage(name, longName) {
     var imageObj = new Image()
-    imageObj.src = "assets/images/" + skin + "/" + longName + ".svg"
+    imageObj.src = "public/assets/images/" + skin + "/" + longName + ".svg"
     imageObj.onload = function () {
       imageCache[name] = imageObj
     }
