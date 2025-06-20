@@ -29,7 +29,7 @@ var Snake = function () {
    * attack(): Plays an attack sound and calculates the attack coordinate based on the enemy's direction. It then calls the Map.attack() function to deal damage at the calculated coordinate.
    */
   module.attack = function () {
-    var audio = new Audio("assets/sounds/snake.wav")
+    var audio = new Audio("/assets/sounds/snake.wav")
     audio.play()
     var coord = this.x
     switch (this.direction) {

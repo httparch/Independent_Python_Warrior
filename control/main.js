@@ -35,7 +35,7 @@ function parse(str) {
         }
         Player.canMove = true
         logAction("collecting a coin")
-        var audio = new Audio("assets/sounds/coin.wav")
+        var audio = new Audio("/assets/sounds/coin.wav")
         audio.play()
         Map.map.splice(Map.map.indexOf(element), 1)
         break
@@ -206,8 +206,8 @@ function check() {
         // Play a random win sound
         var audio = new Audio(
           Math.random() > 0.5
-            ? "assets/sounds/win1.wav"
-            : "assets/sounds/win2.wav"
+            ? "/assets/sounds/win1.wav"
+            : "/assets/sounds/win2.wav"
         )
         audio.play()
 
@@ -229,7 +229,7 @@ function check() {
   if (Player.health <= 0) {
     restart()
     console.log("Defeat!")
-    var audio = new Audio("assets/sounds/dead.wav")
+    var audio = new Audio("/assets/sounds/dead.wav")
     audio.play()
   }
 }
@@ -245,14 +245,14 @@ function restart() {
 function loadMap(skin) {
   // Load hints
 
-  fetch(`assets/levels/${level}/hint.txt`)
+  fetch(`/assets/levels/${level}/hint.txt`)
     .then((response) => response.text())
     .then((responseText) => {
       document.getElementById("hint").innerHTML = responseText
     })
 
   // Load level layout
-  fetch(`assets/levels/${level}/level.txt`)
+  fetch(`/assets/levels/${level}/level.txt`)
     .then((response) => response.text())
     .then((responseText) => {
       victory = false
@@ -268,7 +268,7 @@ function changeLevel() {
   const levelPopup = prompt("Enter level", "")
 
   if (levelPopup !== null && level !== levelPopup) {
-    fetch(`assets/levels/${levelPopup}/level.txt`)
+    fetch(`/assets/levels/${levelPopup}/level.txt`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Level not found")
@@ -292,7 +292,7 @@ function changeLevel() {
 
 // showPopup(): Loads a popup hint from a text file and displays it in the UI.
 function showPopup() {
-  fetch(`assets/levels/${level}/popup.txt`)
+  fetch(`/assets/levels/${level}/popup.txt`)
     .then((response) => response.text())
     .then((responseText) => {
       document.getElementById("hint-text").innerHTML = responseText

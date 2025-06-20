@@ -180,9 +180,9 @@ var Player = (function () {
     //audio.play()
 
     if (Math.random() > 0.5) {
-      var audio = new Audio("assets/sounds/sword1.ogg")
+      var audio = new Audio("/assets/sounds/sword1.ogg")
     } else {
-      var audio = new Audio("assets/sounds/sword2.ogg")
+      var audio = new Audio("/assets/sounds/sword2.ogg")
     }
     audio.play()
     var coord = this.x
