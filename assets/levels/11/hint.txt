@@ -1,0 +1,2 @@
+<span style="color: #00008B;">Luck is still not on your side. You've found another enemy, <br> but this time it's a giant snake("n").  </span><br><br>
+Be careful! They are stronger than the scorpions.

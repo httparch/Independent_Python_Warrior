@@ -1,0 +1,8 @@
+Scorpions "m" require immediate action, so use Player.attack() if you encounter them.<br><br>
+Apply the functions you have learned to this:<br><br>
+
+if (function() == "_"):<br>
+    function()<br>
+else <br>
+    function()<br>
+

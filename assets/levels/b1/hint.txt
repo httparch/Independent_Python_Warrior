@@ -1,0 +1,7 @@
+<span style="color: #00008B;">Welcome, brave knight!<br>
+Your journey to save the princess begins.</span><br><br>
+
+First, let's learn how to walk forward.<br>
+Use <span style="color: green;">Player.walk()</span> to get to the portal.
+
+

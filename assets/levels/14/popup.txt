@@ -1,0 +1,2 @@
+Use Player.attack() for snake ("n") and Player.skipWall() to walk through the wall ("w").
+

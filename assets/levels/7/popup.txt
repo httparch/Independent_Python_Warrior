@@ -1,0 +1,1 @@
+Use Player.openChest() when encountering a chest ("c").
